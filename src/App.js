@@ -20,9 +20,12 @@ import Footer from './Pages/Footer/Footer';
 import Manageproduct from './Pages/Manageproduct/Manageproduct';
 import Notfound from './Pages/Notfound/Notfound';
 import Pay from './Pages/Pay/Pay';
+import AddCourse from './Pages/AddCourse/AddCourse';
+import ManageCourse from './Pages/ManageCourse/ManageCourse';
 
 function App() {
-  return (
+  return (   
+
     <>
       <Authprovider>
         <BrowserRouter>
@@ -64,11 +67,11 @@ function App() {
             <Adminroute path="/makeadmin">
               <Makeadmin></Makeadmin>
             </Adminroute>
-            <Adminroute path="/addproduct">
-              <Addproduct></Addproduct>
+            <Adminroute path="/addcourse">
+              <AddCourse></AddCourse>
             </Adminroute>
-            <Adminroute path="/manageproduct">
-              <Manageproduct></Manageproduct>
+            <Adminroute path="/managecourse">
+              <ManageCourse></ManageCourse>
             </Adminroute>
             <Adminroute path="/orders">
               <Orders></Orders>
