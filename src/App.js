@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
-import Addproduct from './Pages/Addproduct/Addproduct';
+
 import Allproducts from './Pages/Allproducts/Allproducts';
 import Signin from './Pages/Signin/Signin';
 import Signup from './Pages/Signup/Signup';
@@ -17,7 +17,7 @@ import Privateroute from './Privateroute/Privateroute';
 import Adminroute from './Adminroute/Adminroute';
 import Makereview from './Pages/Makereview/Makereview';
 import Footer from './Pages/Footer/Footer';
-import Manageproduct from './Pages/Manageproduct/Manageproduct';
+
 import Notfound from './Pages/Notfound/Notfound';
 import Pay from './Pages/Pay/Pay';
 import AddCourse from './Pages/AddCourse/AddCourse';
