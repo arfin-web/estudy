@@ -94,7 +94,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('https://calm-fjord-73469.herokuapp.com/users', {
+        fetch('https://secure-forest-91029.herokuapp.com/courses', {
             method: "POST",
             headers: {
                 'content-type': "application/json"
