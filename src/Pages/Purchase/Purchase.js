@@ -4,16 +4,16 @@ import useAuth from '../../Hooks/useAuth';
 
 const Purchase = () => {
     const history = useHistory();
-    const [productInfo, setProductInfo] = useState({})
+    const [courseInfo, setCourseInfo] = useState({})
     const { user } = useAuth();
     const { id } = useParams();
 
     useEffect(() => {
-        const url = `https://calm-fjord-73469.herokuapp.com/products/${id}`;
+        const url = `https://secure-forest-91029.herokuapp.com/courses/${id}`;
 
         fetch(url)
             .then(res => res.json())
-            .then(data => setProductInfo(data))
+            .then(data => setCourseInfo(data))
     }, []);
 
     const nameRef = useRef();
@@ -37,7 +37,7 @@ const Purchase = () => {
 
         const myOrders = { name, description, image, price, userName, email, userPhone, status };
 
-        fetch('https://calm-fjord-73469.herokuapp.com/myorders', {
+        fetch('https://secure-forest-91029.herokuapp.com/myorder', {
             method: "POST",
             headers: {
                 'content-type': "application/json"
@@ -61,12 +61,12 @@ const Purchase = () => {
                     <form onSubmit={handleForm} >
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-12 p-5">
-                                <img src={productInfo?.image} className="img-fluid rounded-start w-100" alt="..." />
+                                <img src={courseInfo?.image} className="img-fluid rounded-start w-100" alt="..." />
                             </div>
                             <div className="col-lg-8 col-md-6 col-12 p-5">
-                                <p className="fw-bold text-success mb-4 fs-3">{productInfo?.name}</p>
-                                <p>{productInfo?.description}</p>
-                                <p className="my-3 fs-3">Price: $ <span className="text-success">{productInfo?.price}</span></p>
+                                <p className="fw-bold text-success mb-4 fs-3">{courseInfo?.name}</p>
+                                <p>{courseInfo?.description}</p>
+                                <p className="my-3 fs-3">Price: $ <span className="text-success">{courseInfo?.price}</span></p>
                                 <div className="row g-3">
                                     <div className="col-12">
                                         <label htmlFor="inputName" className="form-label">Name</label>
@@ -78,19 +78,19 @@ const Purchase = () => {
                                     </div>
                                     <div className="col-12">
                                         <label htmlFor="inputDestination" className="form-label">Destination</label>
-                                        <input ref={nameRef} type="text" value={productInfo?.name} className="form-control" id="inputName" />
+                                        <input ref={nameRef} type="text" value={courseInfo?.name} className="form-control" id="inputName" />
                                     </div>
                                     <div className="col-12">
                                         <label htmlFor="inputDescription" className="form-label">Description</label>
-                                        <input ref={descriptionRef} type="text" value={productInfo?.description} className="form-control" id="inputName" />
+                                        <input ref={descriptionRef} type="text" value={courseInfo?.description} className="form-control" id="inputName" />
                                     </div>
                                     <div className="col-12">
                                         <label htmlFor="inputPrice" className="form-label">Price</label>
-                                        <input ref={priceRef} type="text" value={productInfo?.price} className="form-control" id="inputName" />
+                                        <input ref={priceRef} type="text" value={courseInfo?.price} className="form-control" id="inputName" />
                                     </div>
                                     <div className="col-12 d-none">
                                         <label htmlFor="inputImage" className="form-label">Image</label>
-                                        <input ref={imageRef} type="text" value={productInfo?.image} className="form-control" id="inputName" />
+                                        <input ref={imageRef} type="text" value={courseInfo?.image} className="form-control" id="inputName" />
                                     </div>
                                     <div className="col-12">
                                         <label htmlFor="inputPhoneNo" className="form-label">Phone Number</label>

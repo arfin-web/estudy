@@ -2,18 +2,18 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Zoom from 'react-reveal/Zoom';
 
-const Product = ({ product }) => {
+const Course = ({ course }) => {
     return (
         <>
             <div className="col-lg-4 col-md-6 col-12">
                 <Zoom>
                     <div className="card border-0 rounded-3 shadow-sm">
-                        <img src={product.image} className="card-img-top" alt="toy" />
+                        <img src={course.image} className="card-img-top" alt="toy" />
                         <div className="card-body">
-                            <p className="card-title fs-4 text-success">{product.name}</p>
-                            <p className="card-text text-muted">{product.description}</p>
-                            <p className="card-title fs-4">Price: $ {product.price}</p>
-                            <NavLink to={`/toys/${product._id}`}>
+                            <p className="card-title fs-4 text-success">{course.name}</p>
+                            <p className="card-text text-muted">{course.description}</p>
+                            <p className="card-title fs-4">Price: $ {course.price}</p>
+                            <NavLink to={`/courses/${course._id}`}>
                                 <button type="button" className="btn btn-outline-success mt-4">Buy Now</button>
                             </NavLink>
                         </div>
@@ -24,4 +24,4 @@ const Product = ({ product }) => {
     );
 };
 
-export default Product;
+export default Course;

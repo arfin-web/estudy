@@ -52,10 +52,12 @@ function App() {
             <Route exact path="/toys">
               <Allproducts></Allproducts>
             </Route>
-            <Route path="/toys/:id">
+
+            {/* <Privateroute path="/toys/:id">
               <Purchase></Purchase>
-            </Route>
-            <Route path="/myorders">
+            </Privateroute> */}
+            <Privateroute path="/myorders">
+
               <Myorders></Myorders>
             </Route>
             <Route path="/makereviews">
