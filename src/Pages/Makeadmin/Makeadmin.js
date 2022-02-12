@@ -8,7 +8,7 @@ const Makeadmin = () => {
 
     const handleRole = (e) => {
         const user = { email }
-        fetch('http://secure-forest-91029.herokuapp.com/users', {
+        fetch('https://secure-forest-91029.herokuapp.com/users', {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

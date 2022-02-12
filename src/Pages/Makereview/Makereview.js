@@ -16,8 +16,9 @@ const Makereview = () => {
         const review = reviewRef.current.value;
 
         const myReview = { name, email, review };
+        console.log(myReview)
 
-        fetch('http://secure-forest-91029.herokuapp.com/reviews', {
+        fetch('https://secure-forest-91029.herokuapp.com/reviews', {
             method: "POST",
             headers: {
                 'content-type': "application/json"
@@ -30,6 +31,7 @@ const Makereview = () => {
                     alert('Thanks for your Review');
                     e.target.reset()
                 }
+               
             })
         e.preventDefault();
     }

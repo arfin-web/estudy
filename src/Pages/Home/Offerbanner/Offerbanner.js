@@ -1,6 +1,6 @@
 import React from 'react';
-import Zoom from 'react-reveal/Zoom';
-import banner2 from '../../../images/banner2.svg';
+// import Zoom from 'react-reveal/Zoom';
+import banner2 from '../../images/banner2.svg';
 
 const Offerbanner = () => {
     return (
