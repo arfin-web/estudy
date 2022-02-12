@@ -3,14 +3,14 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
 
-import Allproducts from './Pages/Allproducts/Allproducts';
+// import Allproducts from './Pages/Allproducts/Allproducts';
 import Signin from './Pages/Signin/Signin';
 import Signup from './Pages/Signup/Signup';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import Authprovider from './Context/Authprovider';
 import Purchase from './Pages/Purchase/Purchase';
-import Orders from './Pages/Orders/Orders';
+// import Orders from './Pages/Orders/Orders';
 import Myorders from './Pages/Myorders/Myorders';
 import Makeadmin from './Pages/Makeadmin/Makeadmin';
 import Privateroute from './Privateroute/Privateroute';
@@ -18,8 +18,8 @@ import Adminroute from './Adminroute/Adminroute';
 import Makereview from './Pages/Makereview/Makereview';
 import Footer from './Pages/Footer/Footer';
 
-import Notfound from './Pages/Notfound/Notfound';
-import Pay from './Pages/Pay/Pay';
+// import Notfound from './Pages/Notfound/Notfound';
+// import Pay from './Pages/Pay/Pay';
 import AddCourse from './Pages/AddCourse/AddCourse';
 import ManageCourse from './Pages/ManageCourse/ManageCourse';
 
@@ -52,27 +52,29 @@ function App() {
             <Route exact path="/toys">
               <Allproducts></Allproducts>
             </Route>
+
             {/* <Privateroute path="/toys/:id">
               <Purchase></Purchase>
             </Privateroute> */}
             <Privateroute path="/myorders">
+
               <Myorders></Myorders>
-            </Privateroute>
-            <Privateroute path="/makereviews">
+            </Route>
+            <Route path="/makereviews">
               <Makereview></Makereview>
-            </Privateroute>
+            </Route>
             <Privateroute path="/pay">
               <Pay></Pay>
             </Privateroute>
-            <Adminroute path="/makeadmin">
+            <Route path="/makeadmin">
               <Makeadmin></Makeadmin>
-            </Adminroute>
-            <Adminroute path="/addcourse">
+            </Route>
+            <Route path="/addcourse">
               <AddCourse></AddCourse>
-            </Adminroute>
-            <Adminroute path="/managecourse">
+            </Route>
+            <Route path="/managecourse">
               <ManageCourse></ManageCourse>
-            </Adminroute>
+            </Route>
             <Adminroute path="/orders">
               <Orders></Orders>
             </Adminroute>

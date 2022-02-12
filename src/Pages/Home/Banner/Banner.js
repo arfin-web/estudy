@@ -1,8 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './Banner.css';
-import 'animate.css';
-import bannerImage from '../../../images/banner.svg';
+// import 'animate.css';
+import bannerImage from '../../images/banner.svg';
 
 const Banner = () => {
     const history = useHistory()

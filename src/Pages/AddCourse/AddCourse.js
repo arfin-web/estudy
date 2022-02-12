@@ -16,7 +16,7 @@ const AddCourse = () => {
         const newCourse = { name, description, price, image };
 
 
-        fetch('http://secure-forest-91029.herokuapp.com/courses', {
+        fetch('https://secure-forest-91029.herokuapp.com/courses', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
