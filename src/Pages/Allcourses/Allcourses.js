@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 
-const Allproducts = () => {
+const Allcourses = () => {
     const [courses, setCourses] = useState([])
 
     useEffect(() => {
@@ -26,4 +26,4 @@ const Allproducts = () => {
     );
 };
 
-export default Allproducts;
+export default Allcourses;
