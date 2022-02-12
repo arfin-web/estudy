@@ -27,7 +27,6 @@ function App() {
   return (   
 
     <>
-   
       <Authprovider>
         <BrowserRouter>
           <Header></Header>
@@ -50,9 +49,9 @@ function App() {
             <Route path="/signup">
               <Signup></Signup>
             </Route>
-            {/* <Route exact path="/toys">
+            <Route exact path="/toys">
               <Allproducts></Allproducts>
-            </Route> */}
+            </Route>
             <Route path="/toys/:id">
               <Purchase></Purchase>
             </Route>
@@ -62,9 +61,9 @@ function App() {
             <Route path="/makereviews">
               <Makereview></Makereview>
             </Route>
-            {/* <Privateroute path="/pay">
+            <Privateroute path="/pay">
               <Pay></Pay>
-            </Privateroute> */}
+            </Privateroute>
             <Route path="/makeadmin">
               <Makeadmin></Makeadmin>
             </Route>
@@ -74,12 +73,12 @@ function App() {
             <Route path="/managecourse">
               <ManageCourse></ManageCourse>
             </Route>
-            {/* <Adminroute path="/orders">
+            <Adminroute path="/orders">
               <Orders></Orders>
             </Adminroute>
             <Route path="*">
               <Notfound></Notfound>
-            </Route> */}
+            </Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
