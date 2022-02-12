@@ -105,7 +105,7 @@ const useFirebase = () => {
     }
 
     useEffect(() => {
-        const url = `https://calm-fjord-73469.herokuapp.com/users/${user?.email}`;
+        const url = `https://secure-forest-91029.herokuapp.com/courses/${user?.email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
