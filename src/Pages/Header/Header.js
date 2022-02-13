@@ -48,10 +48,10 @@ const Header = () => {
                                                         <NavLink className="nav-link text-success" to="/makeadmin"><i className="fas fa-user-shield fs-5"></i> Make Admin</NavLink>
                                                     </li>
                                                     <li className="list-group-item overflow-hidden">
-                                                        <NavLink className="nav-link text-success" to="/addproduct"><i className="fas fa-plus-circle fs-5"></i> Add Course</NavLink>
+                                                        <NavLink className="nav-link text-success" to="/addcourse"><i className="fas fa-plus-circle fs-5"></i> Add Course</NavLink>
                                                     </li>
                                                     <li className="list-group-item overflow-hidden">
-                                                        <NavLink className="nav-link text-success" to="/manageproduct"><i className="fas fa-tasks fs-5"></i> Manage Course</NavLink>
+                                                        <NavLink className="nav-link text-success" to="/managecourse"><i className="fas fa-tasks fs-5"></i> Manage Course</NavLink>
                                                     </li>
                                                     <li className="list-group-item overflow-hidden">
                                                         <NavLink className="nav-link text-success" to="/orders"><i className="fas fa-dumpster fs-5"></i> All Orders</NavLink>
@@ -93,7 +93,7 @@ const Header = () => {
                                 <NavLink className="nav-link active" aria-current="page" to="/home">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/toys">Courses</NavLink>
+                                <NavLink className="nav-link" to="/courses">Courses</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/about">About</NavLink>
