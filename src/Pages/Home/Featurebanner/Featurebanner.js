@@ -10,8 +10,7 @@ const Featurebanner = () => {
                         <Zoom>
                             <div className="card p-5 rounded-3 shadow-lg">
                                 <div className="card-body">
-                                    <i className="fas fa-shipping-fast fs-1 text-primary"></i>
-                                    <p className="card-title fs-3">20+ Online Courses</p>
+                                    <p className="card-title fs-3"><span className='text-success fw-bold'>20+</span> Online Courses</p>
                                 </div>
                             </div>
                         </Zoom>
@@ -20,8 +19,7 @@ const Featurebanner = () => {
                         <Zoom>
                             <div className="card p-5 rounded-3 shadow-lg">
                                 <div className="card-body">
-                                    <i className="fas fa-gift fs-1 text-primary"></i>
-                                    <p className="card-title fs-3">5+ Awards Winning</p>
+                                    <p className="card-title fs-3"><span className='text-success fw-bold'>5+</span> Awards Winning</p>
                                 </div>
                             </div>
                         </Zoom>
@@ -30,8 +28,7 @@ const Featurebanner = () => {
                         <Zoom>
                             <div className="card p-5 rounded-3 shadow-lg">
                                 <div className="card-body">
-                                    <i className="fas fa-headset fs-1 text-primary"></i>
-                                    <p className="card-title fs-3">100+ Certifications</p>
+                                    <p className="card-title fs-3"><span className='text-success fw-bold'>100+</span> Certifications</p>
                                 </div>
                             </div>
                         </Zoom>

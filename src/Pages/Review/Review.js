@@ -8,11 +8,11 @@ const Review = ({ review }) => {
                 <Zoom>
                     <div className="card rounded-3 shadow bg-light border-3 border-success">
                         <div className="card-header fs-4 text-success">
-                            <i className="fab fa-slack-hash"></i> {review.name}
+                            {review.name}
                         </div>
                         <div className="card-body">
                             <blockquote className="blockquote mb-0">
-                                <p><i className="fas fa-quote-left text-success opacity-75"></i>  {review.review}  <i className="fas fa-quote-right text-success opacity-75"></i></p>
+                                <p> {review.review} </p>
                                 <footer className="blockquote-footer mt-4">From <cite title="Source Title">{review.email}</cite></footer>
                             </blockquote>
                         </div>
