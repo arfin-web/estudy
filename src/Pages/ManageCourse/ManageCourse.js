@@ -9,34 +9,25 @@ const ManageCourse = () => {
             .then(data => setCourses(data))
     }, [])
 
-    // const handleDelete = (id) => {
-    //     const proceed = window.confirm('Do you want to delete this course ?')
-    //     if (proceed) {
-    //         const url = `http://secure-forest-91029.herokuapp.com/singlecourse/${id}`;
-    //         console.log(url)
-    //         fetch(url, {
-    //             method: "DELETE",
-    //         })
-    //             .then(res => res.json())
-    //             .then(data => {
-    //                 if (data.deletedCount > 0) {
-    //                     const remainingCourse = courses.filter(course => course._id !== id)
-    //                     setCourses(remainingCourse);
-    //                 };
-    //             })
-    //     }
-    // }
+    const handleDelete = (id) => {
+        const proceed = window.confirm('Do you want to delete this course ?')
+        if (proceed) {
+            const url = `http://secure-forest-91029.herokuapp.com/courses/${id}`;
+            console.log(url)
+            fetch(url, {
+                method: "DELETE",
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount > 0) {
+                        const remainingCourse = courses.filter(course => course._id !== id)
+                        setCourses(remainingCourse);
+                    };
+                })
+        }
+    }
 
-    const handleDelete = (id ) =>{
-        alert("are you sure?");
-        fetch(`http://secure-forest-91029.herokuapp.com/courses/${id}`,{
-           method: "DELETE", 
-        })
-        .then(res => res.json())
-        .then(data => 
-            console.log(data)
-          
-            )}
+  
 
     return (
         <>

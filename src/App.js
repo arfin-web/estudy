@@ -2,8 +2,6 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
-import Addproduct from './Pages/Addproduct/Addproduct';
-import Allproducts from './Pages/Allproducts/Allproducts';
 import Signin from './Pages/Signin/Signin';
 import Signup from './Pages/Signup/Signup';
 import About from './Pages/About/About';
@@ -17,11 +15,11 @@ import Privateroute from './Privateroute/Privateroute';
 import Adminroute from './Adminroute/Adminroute';
 import Makereview from './Pages/Makereview/Makereview';
 import Footer from './Pages/Footer/Footer';
-import Manageproduct from './Pages/Manageproduct/Manageproduct';
 import Notfound from './Pages/Notfound/Notfound';
 import Pay from './Pages/Pay/Pay';
 import AddCourse from './Pages/AddCourse/AddCourse';
 import ManageCourse from './Pages/ManageCourse/ManageCourse';
+import Allcourses from './Pages/Allcourses/Allcourses';
 
 function App() {
   return (   
@@ -49,10 +47,10 @@ function App() {
             <Route path="/signup">
               <Signup></Signup>
             </Route>
-            <Route exact path="/toys">
-              <Allproducts></Allproducts>
+            <Route exact path="/courses ">
+              <Allcourses></Allcourses>
             </Route>
-            <Privateroute path="/toys/:id">
+            <Privateroute path="/courses /:id">
               <Purchase></Purchase>
             </Privateroute>
             <Privateroute path="/myorders">
@@ -64,15 +62,15 @@ function App() {
             <Privateroute path="/pay">
               <Pay></Pay>
             </Privateroute>
-            <Adminroute path="/makeadmin">
+            <Route path="/makeadmin">
               <Makeadmin></Makeadmin>
-            </Adminroute>
-            <Adminroute path="/addcourse">
+            </Route>
+            <Route path="/addcourse">
               <AddCourse></AddCourse>
-            </Adminroute>
-            <Adminroute path="/managecourse">
+            </Route>
+            <Route path="/managecourse">
               <ManageCourse></ManageCourse>
-            </Adminroute>
+            </Route>
             <Adminroute path="/orders">
               <Orders></Orders>
             </Adminroute>
