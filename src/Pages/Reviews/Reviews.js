@@ -13,7 +13,6 @@ const Reviews = () => {
             <div className="container mb-5">
                 <p className="text-success text-center fs-3">Testimonials</p>
                 <p className="text-muted text-center">What our students say about us</p>
-                <i className="fas fa-quote-left text-success opacity-50 fs-1"></i>
                 <div className="row row-cols-1 row-cols-md-3 g-5 mt-3">
                     {
                         reviews.map(review => <Review
@@ -22,7 +21,6 @@ const Reviews = () => {
                         ></Review>)
                     }
                 </div>
-                <i className="fas fa-quote-right text-success opacity-50 fs-1 mt-5 float-end"></i>
             </div>
         </>
     );

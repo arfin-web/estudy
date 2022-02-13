@@ -19,10 +19,10 @@ const Header = () => {
                 <div className="container py-1">
                     <div className="row">
                         <div className="col-lg-2 col-md-4 col-6">
-                            <p><i className="fas fa-phone-alt"></i> +88017255</p>
+                            <p>Phone: +88017255</p>
                         </div>
                         <div className="col-lg-6 col-md-4 col-6">
-                            <p><i className="fas fa-envelope-open"></i> projectt373@gmail.com</p>
+                            <p>Email: projectt373@gmail.com</p>
                         </div>
                         {
                             user ? <div className="col-lg-4 col-md-4 col-12 d-grid gap-2 d-md-flex justify-content-md-end">
@@ -45,27 +45,27 @@ const Header = () => {
                                             {
                                                 admin && <>
                                                     <li className="list-group-item overflow-hidden">
-                                                        <NavLink className="nav-link text-success" to="/makeadmin"><i className="fas fa-user-shield fs-5"></i> Make Admin</NavLink>
+                                                        <NavLink className="nav-link text-success" to="/makeadmin"> Make Admin</NavLink>
                                                     </li>
                                                     <li className="list-group-item overflow-hidden">
-                                                        <NavLink className="nav-link text-success" to="/addcourse"><i className="fas fa-plus-circle fs-5"></i> Add Course</NavLink>
+                                                        <NavLink className="nav-link text-success" to="/addcourse"> Add Course</NavLink>
                                                     </li>
                                                     <li className="list-group-item overflow-hidden">
-                                                        <NavLink className="nav-link text-success" to="/managecourse"><i className="fas fa-tasks fs-5"></i> Manage Course</NavLink>
+                                                        <NavLink className="nav-link text-success" to="/managecourse"> Manage Course</NavLink>
                                                     </li>
                                                     <li className="list-group-item overflow-hidden">
-                                                        <NavLink className="nav-link text-success" to="/orders"><i className="fas fa-dumpster fs-5"></i> All Orders</NavLink>
+                                                        <NavLink className="nav-link text-success" to="/orders"> All Orders</NavLink>
                                                     </li>
                                                 </>
                                             }
                                             <li className="list-group-item overflow-hidden">
-                                                <NavLink className="nav-link text-success" to="/myorders"><i className="fas fa-dumpster-fire fs-5"></i> My Orders</NavLink>
+                                                <NavLink className="nav-link text-success" to="/myorders"> My Orders</NavLink>
                                             </li>
                                             <li className="list-group-item overflow-hidden">
-                                                <NavLink className="nav-link text-success" to="/makereviews"><i className="fas fa-marker fs-5"></i> Give Review</NavLink>
+                                                <NavLink className="nav-link text-success" to="/makereviews"> Give Review</NavLink>
                                             </li>
                                             <li className="list-group-item overflow-hidden">
-                                                <NavLink className="nav-link text-success" to="/pay"><i className="fab fa-cc-amazon-pay fs-5"></i> Payment</NavLink>
+                                                <NavLink className="nav-link text-success" to="/pay"> Payment</NavLink>
                                             </li>
                                         </ul>
                                     </div>

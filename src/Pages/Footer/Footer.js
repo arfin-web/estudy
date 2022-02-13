@@ -13,9 +13,9 @@ const Footer = () => {
                                 Follow Us
                             </div>
                             <ul className="list-group list-group-flush">
-                                <li className="list-group-item fs-5 text-muted p-3 bg-dark"><i className="fab fa-facebook-square fs-4 text-success"></i> /e-learning</li>
-                                <li className="list-group-item fs-5 text-muted p-3 bg-dark"><i className="fab fa-twitter-square fs-4 text-success"></i> /e-learning</li>
-                                <li className="list-group-item fs-5 text-muted p-3 bg-dark"><i className="fab fa-youtube-square fs-4 text-success"></i> /e-learning</li>
+                                <li className="list-group-item fs-5 text-muted p-3 bg-dark"> facebook.com/e-learning</li>
+                                <li className="list-group-item fs-5 text-muted p-3 bg-dark"> twitter.com/e-learning</li>
+                                <li className="list-group-item fs-5 text-muted p-3 bg-dark"> youtube.com/e-learning</li>
                             </ul>
                         </div>
                     </div>
@@ -26,13 +26,13 @@ const Footer = () => {
                             </div>
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item bg-dark">
-                                    <NavLink to="/toys" className="text-muted text-decoration-none fs-5"><i className="fas fa-hand-point-right fs-4 text-success"></i> Courses</NavLink>
+                                    <NavLink to="/courses" className="text-muted text-decoration-none fs-5"> Courses</NavLink>
                                 </li>
                                 <li className="list-group-item bg-dark">
-                                    <NavLink to="/about" className="text-muted text-decoration-none fs-5"><i className="fas fa-hand-point-right fs-4 text-success"></i> About</NavLink>
+                                    <NavLink to="/about" className="text-muted text-decoration-none fs-5"> About</NavLink>
                                 </li>
                                 <li className="list-group-item bg-dark">
-                                    <NavLink to="/contact" className="text-muted text-decoration-none fs-5"><i className="fas fa-hand-point-right fs-4 text-success"></i> Contact</NavLink>
+                                    <NavLink to="/contact" className="text-muted text-decoration-none fs-5"> Contact</NavLink>
                                 </li>
                             </ul>
                         </div>
