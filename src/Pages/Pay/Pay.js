@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Reactpaypal from '../Reactpaypal/Reactpaypal';
-import './Pay.css';
 
 const Pay = () => {
     const [checkout, setCheckout] = useState(false);
