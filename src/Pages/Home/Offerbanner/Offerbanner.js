@@ -1,6 +1,7 @@
 import React from 'react';
-// import Zoom from 'react-reveal/Zoom';
+import Zoom from 'react-reveal/Zoom';
 import banner2 from '../../images/banner2.svg';
+import 'animate.css';
 
 const Offerbanner = () => {
     return (
@@ -13,36 +14,40 @@ const Offerbanner = () => {
                             <p>The most effective, successful professionals are constantly learning, they take the time to apply what they have learned, and they continually work to improve themselves.</p>
                             <div className="row g-3">
                                 <div className="col-6">
-                                    <div className="card border-0 rounded-3 shadow animate__animated animate__bounce">
-                                        <i className="fas fa-luggage-cart mx-auto fs-1 mt-4 text-success"></i>
-                                        <div className="card-body">
-                                            <p className="card-text text-center">World Class Tutors</p>
+                                    <Zoom>
+                                        <div className="card border-0 rounded-3 shadow animate__animated animate__bounce">
+                                            <div className="card-body">
+                                                <p className="card-text text-center fs-5 fw-bold text-success">World Class Tutors</p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Zoom>
                                 </div>
                                 <div className="col-6">
-                                    <div className="card border-0 rounded-3 shadow animate__animated animate__bounce">
-                                        <i className="fas fa-plane-departure mx-auto fs-1 mt-4 text-success"></i>
-                                        <div className="card-body">
-                                            <p className="card-text text-center">Richfull Contents</p>
+                                    <Zoom>
+                                        <div className="card border-0 rounded-3 shadow animate__animated animate__bounce">
+                                            <div className="card-body">
+                                                <p className="card-text text-center fs-5 fw-bold text-success">Richfull Contents</p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Zoom>
                                 </div>
                                 <div className="col-6">
-                                    <div className="card border-0 rounded-3 shadow animate__animated animate__bounce">
-                                        <i className="fas fa-car-side mx-auto fs-1 mt-4 text-success"></i>
-                                        <div className="card-body">
-                                            <p className="card-text text-center">24/7 Hour Support</p>
+                                    <Zoom>
+                                        <div className="card border-0 rounded-3 shadow animate__animated animate__bounce">
+                                            <div className="card-body">
+                                                <p className="card-text text-center fs-5 fw-bold text-success">24/7 Hour Support</p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Zoom>
                                 </div>
                                 <div className="col-6">
-                                    <div className="card border-0 rounded-3 shadow animate__animated animate__bounce">
-                                        <i className="fas fa-hotel mx-auto fs-1 mt-4 text-success"></i>
-                                        <div className="card-body">
-                                            <p className="card-text text-center">100% Satisfaction</p>
+                                    <Zoom>
+                                        <div className="card border-0 rounded-3 shadow animate__animated animate__bounce">
+                                            <div className="card-body">
+                                                <p className="card-text text-center fs-5 fw-bold text-success">100% Satisfaction</p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Zoom>
                                 </div>
                             </div>
                         </div>
