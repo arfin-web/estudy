@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 
 const About = () => {
-    const aboutimg = 'https://images.unsplash.com/photo-1545997281-2cfe4d4b740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80';
+    const aboutimg = 'https://elearningindustry.com/wp-content/uploads/2020/12/the-importance-of-elearning-advantages-and-benefits.png';
     return (
         <>
             <div className="container-fluid about-container mb-5">
