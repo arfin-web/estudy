@@ -37,7 +37,7 @@ const Purchase = () => {
 
         const myOrders = { name, description, image, price, userName, email, userPhone, status };
 
-        fetch('https://secure-forest-91029.herokuapp.com/myorder', {
+        fetch('https://secure-forest-91029.herokuapp.com/confirmOrder', {
             method: "POST",
             headers: {
                 'content-type': "application/json"
@@ -47,7 +47,7 @@ const Purchase = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Product added');
+                    alert('Course added');
                     history.push('/pay')
                 }
             })
