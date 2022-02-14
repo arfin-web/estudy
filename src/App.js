@@ -47,10 +47,10 @@ function App() {
             <Route path="/signup">
               <Signup></Signup>
             </Route>
-            <Route exact path="/courses ">
+            <Route exact path="/courses">
               <Allcourses></Allcourses>
             </Route>
-            <Privateroute path="/courses /:id">
+            <Privateroute path="/courses/:id">
               <Purchase></Purchase>
             </Privateroute>
             <Privateroute path="/myorders">
