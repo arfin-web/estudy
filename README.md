@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Welcome to the best e-learning platform 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ [Visit Our Website](https://e-learning-51dd6.web.app/).
 
-## Available Scripts
+## Key Features 
 
-In the project directory, you can run:
+### Trendy UI design followed 
+### Separate User and Admin dashboard functionality 
+### Manage courses easily
+### Paypal payment gateway system integrated 
+### Better User Experience 
 
 ### `npm start`
 
