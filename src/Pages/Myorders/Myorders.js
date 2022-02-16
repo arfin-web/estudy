@@ -6,7 +6,7 @@ const Myorders = () => {
     const [myOrders, setMyOrders] = useState([])
 
     useEffect(() => {
-        const url = `https://calm-fjord-73469.herokuapp.com/myorders?email=${user.email}`;
+        const url = `https://secure-forest-91029.herokuapp.com/myOrder/${user.email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setMyOrders(data))
